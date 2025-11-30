@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "D:/Dao of Bits/Microcontrollers"
+		},
+		{
+			"name": "Plant_EL",
+			"path": ".."
+		},
+		{
+			"name": "Hello_World",
+			"path": "../../Hello_World"
+		},
+		{
+			"name": "Hello_espressif",
+			"path": "../../Hello_espressif"
+		}
+	],
+	"settings": {}
+}
