@@ -1,8 +1,8 @@
 <?php
 // PHP Script to insert data into MySQL (XAMPP/WAMP/MAMP)
-$servername = "insert_dht_data";
+$servername = "localhost";
 $username = "root"; 
-$password = "el";     
+$password = "";     
 $dbname = "esp_el"; // Ensure this matches your database name
  
 if(isset($_GET["temperature"]) && isset($_GET["humidity"])) {
@@ -17,7 +17,7 @@ if(isset($_GET["temperature"]) && isset($_GET["humidity"])) {
         die("Connection failed: " . $conn->connect_error);
     } 
     
-    $sql = "INSERT INTO sensor_readings (temperature, humidity) 
+    $sql = "INSERT INTO sensorreadings (temp, humid) 
             VALUES ('" . $temperature . "', '" . $humidity . "')";
     
     if ($conn->query($sql) === TRUE) {
